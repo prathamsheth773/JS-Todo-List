@@ -1,0 +1,73 @@
+.container{
+    width:400px;
+    margin:60px auto;
+}
+.task-input{
+    width:66%;
+    padding:16px;
+    border-radius:10px;
+    font-size:16px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+}
+
+.innercon{
+    display:flex;
+    gap:12px;
+}
+.btn{
+    background-color:black;
+    color:white;
+    font-style:14px;
+    border:none;
+    padding:0px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bolder;
+}
+.alert-success{
+    width:100%;
+    color:green;
+    background-color:rgb(225,255,225);
+    border-radius:10px;
+    padding: 1px 18px;
+    box-sizing:border-box;
+    margin-bottom:10px;
+    font-weight:bolder;
+    font-size:18px;
+}
+.alert-danger{
+    width:100%;
+    color:red;
+    background-color:rgb(255,225,225);
+    border-radius:10px;
+    padding: 1px 18px;
+    box-sizing:border-box;
+    margin-bottom:10px;
+    font-weight:bolder;
+    font-size:18px;
+}
+.alert-msg{
+    margin:0;
+}
+.d-none{
+    display:none;
+}
+.todo-container{
+    width:400px;
+    margin-top:30px;
+}
+.items{
+    display:flex;
+    
+}
+.task-done{
+    margin:0;
+}
+.items p{
+    margin: 8px 0;   
+    padding:8px;
+}
+.task-done:checked{
+    
+}
