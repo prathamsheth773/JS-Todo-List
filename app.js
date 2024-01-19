@@ -20,22 +20,26 @@
 
 //     },2000)
 // }
-const alltodo = [] ;
-newTodo = () =>{
-    let todoContainer = document.getElementById('todo-container')
-    let todobox = document.getElementById('todobox');
-    let todo = document.getElementById('todo').value
-    alltodo.push(todo)
-    console.log(alltodo)
-    todo.innerHTML = ""
-    alltodo.map((task)=>{
-    console.log(task);
-    let check = document.createElement('input')
-    check.type = "checkbox";
-    let list = document.createElement('p');
-    list.innerHTML = task;
-    todobox.appendChild(check);
-    todobox.appendChild(list);
-    todoContainer.appendChild(todobox)
-    });
-}
+const allTask = []
+todoButton.addEventListener('click', newTodo = () => {
+    let todoContainer = document.getElementById('todoContainer')
+    let inputTask = document.getElementById('todo').value
+    allTask.push(inputTask);
+    todoContainer.innerHTML = "";
+    allTask.map((task) => {
+        let paragraph = document.createElement('p')
+        let check = document.createElement('input')
+        check.type = "checkbox"
+        paragraph.innerHTML = task
+        todoContainer.appendChild(paragraph)
+        todoContainer.appendChild(check)
+        document.getElementById('todo').value = " "
+        check.addEventListener('click', () => {
+            if (paragraph.style.textDecoration == "line-through")
+                paragraph.style.textDecoration = "none"
+            else
+                paragraph.style.textDecoration = "line-through"
+        })
+    })
+
+})
